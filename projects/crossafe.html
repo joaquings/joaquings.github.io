@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<title>Joaquin Gonzalez</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Julius+Sans+One">
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Julius Sans One', sans-serif;}
+body, html {
+    height: 100%;
+    color: #000;
+    line-height: 2;
+}
+
+a{
+    text-decoration:none;
+}
+
+
+.mainarticle{
+    font-family: 'Abel', sans-serif;
+    font-size:20px;
+}
+
+
+.upperpostinfo{
+    font-size:13px;
+    color:gray;
+}
+
+.enelpostdehoy{
+    font-size:17px;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('/w3images/parallax1.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("/w3images/parallax2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/w3images/parallax3.jpg");
+    min-height: 400px;
+}
+
+.w3-top {
+    background:rgba(0,0,0,0.7);
+    color:#fff;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+* > .fa.fa-hover-show,
+*:hover > .fa.fa-hover-hidden {
+  display: none;
+}
+*:hover > .fa.fa-hover-show {
+  display: inline-block;
+}
+
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="https://joaquings.tumblr.com/labinteract" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-chevron-up fa-hover-hidden fa-fw" aria-hidden="true" ></i><i class="fa fa-chevron-left fa-hover-show fa-fw" aria-hidden="true"></i> LABINTERACT</a>
+    <a href="https://joaquings.tumblr.com/labinteract-all-posts" class="w3-bar-item w3-button w3-hide-small w3-hover-red">
+    <i class="fa fa-folder fa-hover-hidden fa-fw" aria-hidden="true" ></i><i class="fa fa-folder-open fa-hover-show fa-fw" aria-hidden="true"></i> POSTS</a>
+    
+    
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="https://joaquings.tumblr.com/labinteract" class="w3-bar-item w3-button" onclick="toggleFunction()">LABINTERACT</a>
+    <a href="https://joaquings.tumblr.com/labinteract-all-posts" class="w3-bar-item w3-button" onclick="toggleFunction()">POSTS</a>
+    
+    
+  </div>
+</div>
+
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content mainarticle">
+    <div class="w3-threequarter">
+        <p class="upperpostinfo"><i class="fa fa-calendar" aria-hidden="true"></i>
+ 20/09/2018 - POST 03</p>
+         
+PROYECTO "CROSSSAFE"<br>
+      
+        <hr>
+        <br>
+      <p class="w3-text-grey mainarticle"><i><i class="fa fa-chevron-right" aria-hidden="true"></i>
+ INTRODUCCIÓN</i></p>
+      <p style="font-size:17px">
+
+Como mini proyecto elegimos un cruce de peatones (cebra). Según el <a href="http://unasev.gub.uy/wps/wcm/connect/unasev/fed59997-8d85-4e57-9d23-9500f5caab1e/Informe+Anual+2017_final.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=fed59997-8d85-4e57-9d23-9500f5caab1e"><u>Informe de Siniestralidad Vial Anual (2017, UNASEV)</u></a>, en Uruguay, el peatón representó un 15% (70) de los fallecidos en accidentes de tránsito. A su vez, un 56% de estos accidentes ocurrieron entre las 16 y 23 hs.<br> El uso de los semáforos es bastante coordinado y predecible, por eso concluimos que el peatón tiene mayor riesgo en calles sin señalizar (o mal señalizadas) y pasos de cebra.<br>
+Teniendo en cuenta este último factor y el horario en que ocurren los accidentes (tarde/noche), nos planteamos de alguna manera mejorar la señalizacion ya existente de los cruces de cebra.<br><br>
+</p>
+
+<p class="w3-text-grey mainarticle"><i><i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+ LA IDEA </i></p>
+      <p style="font-size:17px">
+
+Para la mejora de la señalización pensamos en la instalación de luces LED con el mismo layout intuitivo de la cebra (franjas en dirección perpendicular a la circulación de vehículos).<br>
+Esta "cebra LED" se activa desde cualquiera de los 2 botones que hay a cada lado de la acera y se desactiva cuando el vehículo ya atravesó el cruce (dando a entender que ya no hay nadie en la cebra)<br><br>
+
+<p class="w3-text-grey mainarticle"><i><i class="fa fa-puzzle-piece" aria-hidden="true"></i>
+
+    CÓMO FUNCIONA?</i></p>
+    
+   <!-- 
+    https://www.arduinoall.com/product/566/power-electronic-switch-relay-%E0%B8%A3%E0%B8%B5%E0%B9%80%E0%B8%A5%E0%B8%A2%E0%B9%8C%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%AD%E0%B8%B4%E0%B9%80%E0%B8%A5%E0%B9%87%E0%B8%81%E0%B8%97%E0%B8%A3%E0%B8%AD%E0%B8%99%E0%B8%B4%E0%B8%81%E0%B8%AA%E0%B9%8C-switch-mosfet-irf520n-relay-driver-module-powe
+-->
+    
+      <p style="font-size:17px">
+
+La "cebra LED" propiamente está compuesta por tiras LED  que forman un rectángulo que delimita cada franja blanca de la cebra. A su vez,cada rectángulo está vinculado con el siguiente, determinando así una estructura ordenada y facilitando el código en futuras implementaciones como por ejemplo: una secuencia intermitente para que los vehículos disminuyan su velocidad a medida que se van aproximando a la cebra (para implementar esto, sería necesario el uso de sensores de velocidad ya existentes, y vincularlos con nuestros LEDs).
+<br>
+Tanto la estructura LED como el cableado se encuentran por debajo del nivel de la calle (calado en el pavimento) y están cubiertos y sellados por tramos de acrílico ahumado para lograr la difusión de la luz así como también para proteger al circuito de deterioro climático y desgaste en general.
+<br>
+A cada lado de la cebra, instalado sobre la vereda, hay un botón ubicado en un pedestal. Este botón permite al peatón solicitar el cruce. Una vez que el botón es presionado, comienza la secuencia de luces intermitente que indican al auto que alguien quiere cruzar. Luego las luces quedan fijas indicando al usuario que es seguro cruzar.
+<br>
+Dado que este sistema se pensó para pasos de cebra en donde la calle tiene un solo sentido, se utiliza un sensor fotoeléctrico de barrera. El emisor se instala en el cordón de un lado de la calle y el receptor en el otro. Tanto emisor como receptor se colocan algunos metros por delante de la cebra para poder garantizar que el vehículo ya circuló dando a entender que ya no hay peatones en la cebra. En definitiva, cuando el sensor de barrera detecta una interrupción y sólo si la cebra LED está encendida, apaga la secuencia de la misma.
+<br><br>
+</p>
+
+<p class="w3-text-grey mainarticle"><i><i class="fa fa-wrench" aria-hidden="true"></i>
+
+
+    PROTOTIPADO</i></p>
+
+Renders del primer modelo 3D <i class="fa fa-chevron-down" aria-hidden="true"></i>
+<br>
+
+<img src="https://78.media.tumblr.com/17216eec6e1b60fe74a2187077417d53/tumblr_pf0437zWRG1w7l4ozo1_1280.jpg" style="width:100%" href="https://78.media.tumblr.com/17216eec6e1b60fe74a2187077417d53/tumblr_pf0437zWRG1w7l4ozo1_1280.jpg"><br><br>
+<img src="https://78.media.tumblr.com/283487daccaaf741ff05f8a69ca876b6/tumblr_pf044tkXDi1w7l4ozo1_1280.jpg" style="width:100%" href="https://78.media.tumblr.com/283487daccaaf741ff05f8a69ca876b6/tumblr_pf044tkXDi1w7l4ozo1_1280.jpg"><br><br>
+<img src="https://78.media.tumblr.com/c62484319fb7440b31906c8c3b8bee39/tumblr_pf045bjTdI1w7l4ozo1_1280.jpg" style="width:100%" href="https://78.media.tumblr.com/c62484319fb7440b31906c8c3b8bee39/tumblr_pf045bjTdI1w7l4ozo1_1280.jpg"><br><br>
+
+<p style="font-size:17px">
+Este primer modelado nos ayudó a visualizar y analizar hacia donde estaba dirigiéndose el proyecto, y esto nos permitió ver algunas de nuestras falencias. Por ejemplo, como se aprecia en el render, las luces LEDs hacían simplemente una línea a lo largo de cada franja lo cual es poco intuitivo. De esta manera, en lugar de resaltar y hacer más visible la cebra, podíamos llegar a generar confusión y no cumplir nuestro principal objetivo. Dado esto, repensamos la ubicación de las luces y concluimos que ubicandolas en el contorno de cada franja lograríamos ese destaque fácilmente visible que buscábamos.
+</p><br><br>
+
+Rediseño del sistema y su implementación <i class="fa fa-chevron-down" aria-hidden="true"></i>
+<br>
+
+<p style="font-size:17px">
+Una vez resuelta la ubicación de las luces, comenzamos a trabajar con la secuencia de las mismas. Comenzamos trabajando con tiras LED RGB, las cuales permiten obtener un espectro de colores muy amplio. Estas tiras ocasionaron problemas con el encendido/apagado y también con la recepción de señal desde la placa Arduino, por lo que decidimos simplificar y trabajar con diodos LED independientes. De hecho, la utilización de las tiras RGB era injustificado en nuestro proyecto, ya que no requeríamos el uso de variar colores. Si bien evaluamos la posibilidad de usar códigos de colores como el verde (para habilitar a cruzar) y el rojo (para no cruzar), descartamos esta idea por el hecho de que nos aproximábamos demasiado al concepto del semáforo y nuestra idea original siempre fue mantener la esencia de las cebras.
+
+</p><br><br>
+
+<img src="https://78.media.tumblr.com/827cb411a5d8e645f55d14a8b3c3d270/tumblr_pfcrn1omeq1w7l4ozo1_1280.jpg" style="width:100%" href="https://78.media.tumblr.com/17216eec6e1b60fe74a2187077417d53/tumblr_pf0437zWRG1w7l4ozo1_1280.jpg"><br><br>
+<img src="https://78.media.tumblr.com/b0c7c427eae6fa2eec0cae0edc8ca2b0/tumblr_pfcrn1omeq1w7l4ozo4_1280.jpg" style="width:100%" href="https://78.media.tumblr.com/283487daccaaf741ff05f8a69ca876b6/tumblr_pf044tkXDi1w7l4ozo1_1280.jpg"><br><br>
+<img src="https://78.media.tumblr.com/ec842ee1b32c7556491a2b1a4d077228/tumblr_pfcrn1omeq1w7l4ozo3_1280.jpg" style="width:100%" href="https://78.media.tumblr.com/c62484319fb7440b31906c8c3b8bee39/tumblr_pf045bjTdI1w7l4ozo1_1280.jpg"><br><br>
+
+
+<p class="w3-text-grey mainarticle"><i><i class="fa fa-code" aria-hidden="true"></i>
+
+
+    CODIGO</i></p>
+    
+   <script src="https://gist.github.com/audiovisual2018/0c31f53176c7c835f10b8df6dfe1a218.js"></script><br>
+    
+    
+<p class="w3-text-grey mainarticle"><i><i class="fa fa-plug" aria-hidden="true"></i>
+
+
+
+    CIRCUITO</i></p>
+    
+    <img src="https://78.media.tumblr.com/679652868bcebb12e680d5c830908f0c/tumblr_pfcthxICSP1w7l4ozo1_1280.jpg" style="width:100%" href="https://78.media.tumblr.com/283487daccaaf741ff05f8a69ca876b6/tumblr_pf044tkXDi1w7l4ozo1_1280.jpg"><br><br>
+    
+   
+    
+    
+    
+    
+
+
+
+<br><br>
+<p class="w3-text-grey mainarticle"><i><i class="fa fa-bookmark" aria-hidden="true"></i> REFERENCIAS Y LINKS</i></p>
+      <p style="font-size:17px">
+
+<i class="fa fa-file-text" aria-hidden="true"></i>
+<i><a class="mainarticle" style="font-size:17px" href="https://hobbycomponents.com/motor-drivers/661-irf520-mosfet-driver-module" target="/blank">Specs del módulo MOSFET</a></i><br>
+
+<i class="fa fa-file-text" aria-hidden="true"></i>
+<i><a class="mainarticle" style="font-size:17px" href="http://www.redrok.com/MOSFET_IRF520N_100V_9.7A_200mO_Vth4.0_TO-220.pdf" target="/blank">Documentación del transistor IRF520n</a></i><br>
+
+<i class="fa fa-file-text" aria-hidden="true"></i>
+<i><a class="mainarticle" style="font-size:17px" href="https://www.shiji-led.com/Product/view/id/996.html" target="/blank">Specs del LED strip</a></i><br>
+
+<i class="fa fa-globe" aria-hidden="true"></i>
+<i><a class="mainarticle" style="font-size:17px" href="https://www.makeuseof.com/tag/connect-led-light-strips-arduino/" target="/blank">Connect LED strip to Arduino (Tutorial)</a></i><br>
+
+<i class="fa fa-info-circle" aria-hidden="true"></i>
+<i><a class="mainarticle" style="font-size:17px" href="https://proxitron.com/optical-sensors/light-barrier/laser-light-barrier/" target="/blank">Sensor Light Barrier</a></i><br>
+
+<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+<i><a class="mainarticle" style="font-size:17px" href="http://unasev.gub.uy/wps/wcm/connect/unasev/fed59997-8d85-4e57-9d23-9500f5caab1e/Informe+Anual+2017_final.pdf?MOD=AJPERES&CONVERT_TO=url&CACHEID=fed59997-8d85-4e57-9d23-9500f5caab1e" target="/blank">Informe Anual de Siniestralidad Vial (UNASEV, 2017)</a></i><br>
+
+    
+    
+    
+
+
+</p>
+</p>
+
+
+          
+      
+        <br>
+        <br>
+        <br>
+
+
+    </div>
+    <!--
+IMAGENES IMAGENES IMAGENES IMAGENES IMAGENES IMAGENES
+    
+<div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="https://sm.askmen.com/askmen_latam/photo/default/portada-mustang-askmen2016_875c.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <p></p>
+      <img src="https://i.pinimg.com/originals/7c/ae/25/7cae2572d949e50cb99c8a5d955acf36.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <p></p>
+      <img src="https://i.ytimg.com/vi/w7TSGo1xopg/maxresdefault.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="http://imagesvc.timeincapp.com/v3/foundry/image/?q=70&w=1440&url=https%3A%2F%2Ftimedotcom.files.wordpress.com%2F2017%2F04%2Fmuscle-car-new-york-hero.jpg%3Fquality%3D85" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <p></p>
+      <img src="http://dealeraccelerate-dev.s3.amazonaws.com/showdown/marketing_assets/2/slide-1.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <p></p>
+      <img src="https://st.hotrod.com/uploads/sites/21/2016/11/collectible-80s-cars-chevrolet-camaro-z28.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+</div>  
+    
+
+    
+
+  </div>
+</div>
+
+-->
+
+
+<!-- Footer -->
+
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
