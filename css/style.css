@@ -142,7 +142,7 @@ ul li i {
 ul li i:before, ul li i:after {
   content: "";
   position: absolute;
-  background-color: #fff; //#1887e;
+  background-color: #1887e;
   width: 3px;
   height: 9px;
 }
