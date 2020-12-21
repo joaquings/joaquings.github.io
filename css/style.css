@@ -1,3 +1,7 @@
+*{
+  font-family:'Source Sans Pro', sans-serif;
+}
+
 .transition, p, ul li i:before, ul li i:after {
   transition: all 0.25s ease-in-out;
 }
@@ -76,7 +80,7 @@
 button:focus { outline: none; }
 
 .cvbtn{
-  width: 2vw;
+  width: auto;
   height:2vw;
   border-style: solid;
   border-radius: 50px;
@@ -88,17 +92,40 @@ button:focus { outline: none; }
 }
 
 .cvbtn:hover{
-  width: 5vw;
+  width: auto;
+  height:2vw;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: #fff;
+  font-family:'Source Sans Pro', sans-serif;
+  background-color: rgb(231, 60, 60);
+  color:#fff;
+  outline-style: none;
+}
+
+.cvbtn-green{
+  width: auto;
   height:2vw;
   border-style: solid;
   border-radius: 50px;
   border-color: #000;
   font-family:'Source Sans Pro', sans-serif;
-  background-color: #fff;
-  color:#000;
+  background-color: #000;
+  color:#fff;
   outline-style: none;
 }
 
+.cvbtn-green:hover{
+  width: auto;
+  height:2vw;
+  border-style: solid;
+  border-radius: 50px;
+  border-color: #fff;
+  font-family:'Source Sans Pro', sans-serif;
+  background-color: rgb(34, 214, 103);
+  color:#fff;
+  outline-style: none;
+}
 
 .footercopy{
   font-size: 12px;
@@ -110,11 +137,13 @@ html {
   perspective: 900;
   overflow-y: scroll;
   background-color: #f5f5f5;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  /*font-family: 'Source Sans Pro', sans-serif;*/
   color: rgba(48, 69, 92, 0.8);
 }
 
 body {
+  overflow: hidden; /* Hide scrollbars */
   min-height: 70%;
   display: inline-block;
   position: relative;
