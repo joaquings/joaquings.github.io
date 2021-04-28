@@ -1,10 +1,11 @@
 # User config
-author: "cpjags"
+author: "Joaquín González"
 tagline: "Joaquin González"
-description: "Creador de contenido multimedia."
+description: "Creador de contenido multimedia / Estudiante de Ingeniería Audiovisual. Tech fan / Open Source / Python."
 keywords: "audiovisual, ingenieria audiovisual, multimedia design"
 email: "cpjags@gmail.com"
 linkedin: "https://www.linkedin.com/in/joaquin-gs/"
+github: "https://www.instagram.com/joaquin.gs/"
 
 # Site config
 baseurl: ""

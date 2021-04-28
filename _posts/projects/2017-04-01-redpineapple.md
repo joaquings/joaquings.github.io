@@ -7,16 +7,16 @@ meta:
   keywords: "Jekyll, Pineapple"
 
 project:
-  title: "Red Pineapple"
-  type: "Jekyll"
-  url: "https://github.com/arnolds/pineapple"
+  title: "Lo de Pepe"
+  type: "MOTION GRAPHIC"
+  url: "https://joaquings.com"
   logo: "/assets/images/projects/redpineapple/logo.png"
   tech: "HTML, CSS, Boostrap, Sass, JavaScript, jQuery, Jekyll"
 
 agency:
-  title: "Red Pineapple Co"
-  url: "https://github.com/arnolds/pineapple"
-  year: "2017"
+  title: "YENDO"
+  url: ""
+  year: "2021"
 
 images:
   - image:
