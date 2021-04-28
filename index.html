@@ -1,368 +1,44 @@
+---
+---
 <!DOCTYPE html>
-<html lang="es-ES">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Joaquín González</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/render2.jpg" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume - v2.2.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+	<title>{{ site.author }} / {{ site.tagline }}</title>
+	<meta name="author" content="{{ site.author }}">
+	<meta name="description" content="{{ site.description }}">
+	<meta name="keywords" content="{{ site.keywords }}">
+	{% include head.html %}
 </head>
-
 <body>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-
-    <nav class="nav-menu">
-      <ul>
-        <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>/ home</span></a></li>
-        <li><a href="#about"><i class="bx bx-smile"></i> <span>/ bio</span></a></li>
-        <li><a href="#portfolio"><i class="bx bx-folder-open"></i> <span>~ portfolio</span></a></li>
-        <li><a href="#contact"><i class="bx bx-navigation"></i> <span>/ contacto</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
-
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Joaquín González</h1>
-      <!--<p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>-->
-      <div class="social-links">
-        <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>-->
-        <a href="https://github.com/joaquings/" class="instagram" target="_blank"><i class="bx bxl-github"></i></a>
-        <a href="https://instagram.com/joaquin.gs/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
-        <!--<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>-->
-      </div>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about bio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <img src="assets/img/bio-avatar.png" style="width:7vw; margin-bottom: 30px;">
-          <p></p>
-          <p>Creador de contenido audiovisual y multimedia. Diseño de sistemas interactivos para proyectos que involucran nuevas tecnologías, innovación y entretenimiento. Estudiante de Ingeniería Audiovisual. <i> Tech fan / Open Source / Python.</i></p>
-        </div>
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p></p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <!--<li data-filter="*" class="filter-active">Todo</li>
-              <li data-filter=".filter-card">Card</li>-->
-              <li data-filter=".filter-web" class="filter-active"><i class="bx bx-pyramid"></i> work</li>
-              <li data-filter=".filter-app"><i class="bx bx-cube-alt"></i> experimental</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-<!--
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/u25_1.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>U25 - Itaú</h4>
-                <p>Publicidad</p>
-                <div class="portfolio-links">
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Más"><i class="bx bxs-plus-circle"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
--->
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/fotoim_cover.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Así te quiero</h4>
-                <p>Publicidad</p>
-                <div class="portfolio-links">
-                  <a href="https://www.notion.so/AS-TE-QUIERO-9bd982dbcada4687823e8f40357b8785" target="_blank" data-gall="portfolioDetailsGallery" title="Más"><i class="bx bxs-plus-circle"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/u25_1.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>U25 - Itaú</h4>
-                <p>Publicidad</p>
-                <div class="portfolio-links">
-                  <a href="https://www.notion.so/U25-ITA-dfcc61d6c472438eb71d496d030845ef" target="_blank" data-gall="portfolioDetailsGallery" title="Más"><i class="bx bxs-plus-circle"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/emma_1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>EMMA</h4>
-                <p>Instalación interactiva</p>
-                <div class="portfolio-links">
-                  <a href="https://www.notion.so/EMMA-105d19860dce4a98a8cc1d6770875166" target="_blank" data-gall="portfolioDetailsGallery"  title="Más"><i class="bx bxs-plus-circle"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/cdfmapping2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>CDF Cabildo</h4>
-                <p>Videomapping</p>
-                <div class="portfolio-links">
-                  <a href="https://www.notion.so/Videomapping-CDF-762f78b19a714178ac918a2f09c93b18" target="_blank" data-gall="portfolioDetailsGallery" title="Más"><i class="bx bxs-plus-circle"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/bxlm.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Birra X La Música</h4>
-                <p>Streaming</p>
-                <div class="portfolio-links">
-                  <a href="https://www.notion.so/BIRRA-X-LA-M-SICA-d74f5f03796446beb9ccda56502a4bf2" target="_blank" data-gall="portfolioDetailsGallery" title="Más"><i class="bx bxs-plus-circle"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/dt_dv.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Dónde Voy - Diego Traverso</h4>
-                <p>Videoclip</p>
-                <div class="portfolio-links">
-                  <a href="https://www.notion.so/D-nde-voy-Diego-Traverso-9895466439fc4f1abfe9a0af7e985cc2" target="_blank" data-gall="portfolioDetailsGallery"  title="Más"><i class="bx bxs-plus-circle"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/pali_3.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Voy a quererme - PAULA GO</h4>
-                <p>Videoclip</p>
-                <div class="portfolio-links">
-                  <a href="https://www.notion.so/Voy-a-quererme-Paula-Go-b09eac423f8247358d9f6bd3bbf4f4bc" target="_blank" data-gall="portfolioDetailsGallery" title="Más"><i class="bx bxs-plus-circle"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/cosmos_1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Cosmos</h4>
-                <p>(próximamente)</p>
-                <p>LIVE VISUALS</p>
-                <div class="portfolio-links">
-                  <!--<a href="" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Más"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/copy_1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>copyplanet.xyz</h4>
-                <p>Proyecto Artístico</p>
-                <div class="portfolio-links">
-                  <a href="" data-gall="https://www.notion.so/COPYPLANET-XYZ-c74e113b99d84c3282ff21ea41679af7" target="_blank" data-gall="portfolioDetailsGallery" title="Más"><i class="bx bxs-plus-circle"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-
-
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-        </div>
-        <div class="info">
-
-
-          <div class="email">
-            <i class="icofont-envelope"></i>
-            <h4>mail</h4>
-            <p>cpjags@gmail.com</p>
-          </div>
-
-          <div class="phone">
-            <i class="icofont-instagram"></i>
-            <h4>instagram</h4>
-            <p>@joaquin.gs</p>
-          </div>
-
-        </div>
-        <!--
-        <div class="row mt-1">
-
-          <div class="col-lg-4">
-            <div class="info">
-
-
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>mail</h4>
-                <p>cpjags@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="icofont-instagram"></i>
-                <h4>instagram</h4>
-                <p>@joaquin.gs</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div>
-        -->
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; 2021 <!--<strong><span>Joaquín González</span></strong>--></div>
-      <div class="credits" style="font-size:10px;">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed based on <a href="https://bootstrapmade.com/">BootstrapMade</a> template.
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
-  <!--<div id="preloader"></div>-->
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+	{% include header.html %}
+	<main class="content">
+		<section class="intro">
+			<div class="container">
+				<h2>About me.</h2>
+				<p>{{ site.description }}</p>
+			</div>
+		</section>
+		<section class="projects">
+			<div class="container">
+				<h2>Projects I have worked on.</h2>
+				<ul class="projects-list">
+					{% for item in site.categories.projects reversed %}
+						<li>
+							<a href="{{ item.url | prepend: site.baseurl }}">
+								<div class="img-wrapper">
+									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+								</div>
+								<span class="h2">{{ item.project.type }}</span>
+								<h3>{{ item.project.title }}</h3>
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</section>
+	</main>
+	{% include footer.html %}
+	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/scripts/home.js" | prepend: site.baseurl }}"></script>
 </body>
-
 </html>
