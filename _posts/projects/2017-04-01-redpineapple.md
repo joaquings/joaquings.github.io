@@ -10,11 +10,8 @@ project:
   title: "Lo de Pepe"
   type: "MOTION GRAPHIC"
   logo: "/assets/images/projects/redpineapple/logo.png"
-  tech: "HTML, CSS, Boostrap, Sass, JavaScript, jQuery, Jekyll"
 
 agency:
-  title: "YENDO"
-  url: "https://www.instagram.com/siempreyendo/"
   year: "2021"
 
 images:

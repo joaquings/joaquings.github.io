@@ -17,13 +17,14 @@
 					<h1>
 						<a title="{{ page.project.title }}" rel="nofollow">{{ page.project.title }}</a>
 					</h1>
+					<span class="h2">DESCRIPCION</span>
 					{{ page.content }}
 					<div class="project-meta">
-						<span class="h2">Technologies</span>
+						<span class="h2">TECH</span>
 						<p>{{ page.project.tech }}</p>
-						<span class="h2">Agency</span>
+						<span class="h2">REFERENCIA</span>
 						<p><a title="{{ page.agency.title }}" href="{{ page.agency.url }}" target="_blank" rel="nofollow">{{ page.agency.title }}</a></p>
-						<span class="h2">Year</span>
+						<span class="h2">AÑO</span>
 						<p>{{ page.agency.year }}</p>
 					</div>
 				</article>
@@ -42,13 +43,13 @@
 			<div class="container">
 				{% if page.previous and page.previous.categories contains "projects" %}
 				<a title="Previous {{ page.previous.project.title }}" href="{{ page.previous.url | prepend: site.baseurl }}" class="prev">
-					<span class="h2">Previous</span>
+					<span class="h2">ANTERIOR</span>
 					<h2>{{ page.previous.project.title }}</h2>
 				</a>
 				{% endif %}
 				{% if page.next and page.next.categories contains "projects" %}
 				<a title="Next {{ page.next.project.title }}" href="{{ page.next.url | prepend: site.baseurl }}" class="next">
-					<span class="h2">Next</span>
+					<span class="h2">SIGUIENTE</span>
 					<h2>{{ page.next.project.title }}</h2>
 				</a>
 				{% endif %}
