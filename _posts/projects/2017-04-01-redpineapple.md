@@ -4,18 +4,17 @@ permalink: /:title/
 category: projects
 
 meta:
-  keywords: "Jekyll, Pineapple"
+  keywords: "motiongraphic"
 
 project:
   title: "Lo de Pepe"
   type: "MOTION GRAPHIC"
-  url: "https://joaquings.com"
   logo: "/assets/images/projects/redpineapple/logo.png"
   tech: "HTML, CSS, Boostrap, Sass, JavaScript, jQuery, Jekyll"
 
 agency:
   title: "YENDO"
-  url: ""
+  url: "https://www.instagram.com/siempreyendo/"
   year: "2021"
 
 images:
