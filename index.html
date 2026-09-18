@@ -3,49 +3,68 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cuaderno</title>
+<title>cuaderno.dev</title>
 <meta name="description" content="Notas y apuntes sobre lo que voy construyendo.">
+<script>
+  // Aplica el tema guardado antes de pintar, para que no haya parpadeo.
+  try {
+    document.documentElement.style.setProperty("color-scheme", localStorage.getItem("tema") || "dark");
+  } catch (e) {}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-page="home">
 
-<header class="site-head">
-  <div class="wrap">
-    <a class="brand" href="index.html">Cuaderno</a>
-    <nav class="nav" aria-label="Principal">
-      <a href="index.html" aria-current="page">Inicio</a>
-      <a href="blog.html">Blog</a>
-      <a href="sobre-mi.html">Sobre mí</a>
-    </nav>
+<div class="layout">
+  <aside class="sidebar" id="sidebar"></aside>
+
+  <div class="main">
+    <header class="navbar" id="navbar"></header>
+
+    <div class="container">
+      <main class="content">
+
+        <section class="hero">
+          <h1>Hola, soy Tu Nombre 👋</h1>
+          <p>Desarrollador, lector compulsivo de documentación y coleccionista de proyectos
+          a medio terminar. Acá escribo lo que voy aprendiendo.</p>
+          <div class="hero-buttons">
+            <a class="button" href="blog.html">Leer el blog</a>
+            <a class="button secondary" href="sobre-mi.html">Sobre mí</a>
+          </div>
+        </section>
+
+        <section>
+          <div class="section-head">
+            <h2>Una línea de tiempo</h2>
+          </div>
+          <ul class="timeline">
+            <li><span class="when">2014–2018</span><span>Estudié, abandoné y volví a estudiar. Mi primer sitio fue una tabla de HTML.</span></li>
+            <li><span class="when">2019–2023</span><span>Primer trabajo en desarrollo. Aprendí más leyendo código ajeno que en cualquier curso.</span></li>
+            <li><span class="when">2024–hoy</span><span>Escribo lo que hago. Este cuaderno es el resultado.</span></li>
+          </ul>
+        </section>
+
+        <section>
+          <div class="section-head">
+            <h2>Lo último</h2>
+            <a href="blog.html">Ver todo</a>
+          </div>
+          <div id="ultimos"></div>
+        </section>
+
+      </main>
+    </div>
+
+    <footer class="site-footer" id="footer"></footer>
   </div>
-</header>
+</div>
 
-<main class="wrap">
-
-  <section class="hero">
-    <h1>Un lugar para pensar en voz alta.</h1>
-    <p class="hero-lead">Escribo sobre lo que voy construyendo, lo que rompo en el camino
-    y lo que aprendo arreglándolo. <strong>Sin calendario ni tema fijo:</strong> cuando
-    hay algo que vale la pena contar, lo escribo acá.</p>
-  </section>
-
-  <section>
-    <h2 class="section-title">Lo último que escribí</h2>
-    <div id="ultimos"></div>
-    <p style="margin-top:2rem"><a href="blog.html">Ver todos los posts</a></p>
-  </section>
-
-</main>
-
-<footer class="site-foot">
-  <div class="wrap">
-    <p>© <span id="año">2026</span> Cuaderno. Hecho con archivos de texto y GitHub Pages.</p>
-  </div>
-</footer>
-
+<script src="js/site-config.js"></script>
+<script src="js/layout.js"></script>
 <script src="js/posts.js"></script>
 <script src="js/main.js"></script>
 </body>

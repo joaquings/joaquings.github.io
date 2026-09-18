@@ -3,43 +3,44 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Blog — Cuaderno</title>
-<meta name="description" content="Todos los posts publicados, del más nuevo al más viejo.">
+<title>Blog — cuaderno.dev</title>
+<meta name="description" content="Todos los posts publicados.">
+<script>
+  try {
+    document.documentElement.style.setProperty("color-scheme", localStorage.getItem("tema") || "dark");
+  } catch (e) {}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-page="blog">
 
-<header class="site-head">
-  <div class="wrap">
-    <a class="brand" href="index.html">Cuaderno</a>
-    <nav class="nav" aria-label="Principal">
-      <a href="index.html">Inicio</a>
-      <a href="blog.html" aria-current="page">Blog</a>
-      <a href="sobre-mi.html">Sobre mí</a>
-    </nav>
+<div class="layout">
+  <aside class="sidebar" id="sidebar"></aside>
+
+  <div class="main">
+    <header class="navbar" id="navbar"></header>
+
+    <div class="container">
+      <main class="content">
+
+        <h1>Blog</h1>
+        <p>Todo lo que escribí, ordenado por fecha. Filtrá por etiqueta si buscás algo puntual.</p>
+
+        <div class="filter-bar" id="filtros"></div>
+        <div id="indice"></div>
+
+      </main>
+    </div>
+
+    <footer class="site-footer" id="footer"></footer>
   </div>
-</header>
+</div>
 
-<main class="wrap">
-
-  <div class="hero">
-    <h1>Todo lo publicado</h1>
-    <p class="hero-lead">Ordenado por fecha, del más reciente al primero.</p>
-  </div>
-
-  <div id="indice"></div>
-
-</main>
-
-<footer class="site-foot">
-  <div class="wrap">
-    <p>© <span id="año">2026</span> Cuaderno. Hecho con archivos de texto y GitHub Pages.</p>
-  </div>
-</footer>
-
+<script src="js/site-config.js"></script>
+<script src="js/layout.js"></script>
 <script src="js/posts.js"></script>
 <script src="js/main.js"></script>
 </body>

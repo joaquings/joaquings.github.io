@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>cuaderno.dev</title>
+    <link>https://usuario.github.io/repo</link>
+    <description>Notas y apuntes sobre lo que voy construyendo.</description>
+    <language>es</language>
+    <item>
+      <title>Cómo escribir un post nuevo</title>
+      <link>https://usuario.github.io/repo/post.html?p=2026-09-10-como-escribir-un-post</link>
+      <guid isPermaLink="true">https://usuario.github.io/repo/post.html?p=2026-09-10-como-escribir-un-post</guid>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+      <description>Crear un archivo markdown, actualizar el índice y hacer push. Eso es todo.</description>
+    </item>
+    <item>
+      <title>Arranca el cuaderno</title>
+      <link>https://usuario.github.io/repo/post.html?p=2026-08-02-primer-post</link>
+      <guid isPermaLink="true">https://usuario.github.io/repo/post.html?p=2026-08-02-primer-post</guid>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
+      <description>Por qué decidí escribir en un sitio propio en vez de en una plataforma prestada.</description>
+    </item>
+  </channel>
+</rss>
