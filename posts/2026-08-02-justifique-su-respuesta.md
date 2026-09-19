@@ -1,6 +1,6 @@
 ---
 title: Justifique su respuesta
-date: 2026-19-09
+date: 2026-09-19
 author: JAGS
 summary: Razones para arrancar este blog/bitácora/coso.
 tags: [personal]
