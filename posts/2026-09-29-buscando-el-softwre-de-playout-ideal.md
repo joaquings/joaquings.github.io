@@ -2,13 +2,11 @@
 title: Buscando el software de playout perfecto para vMix
 date: 2026-09-29
 author: JAGS
-summary: Razones para arrancar este blog/bitácora/coso.
-tags: [personal]
+summary: Bitácora no muy clara de mi investigación sobre sistemas de playout.
+tags: [video][software][broadcast]
 ---
 
 <article class="post">
-
-  <h1>Buscando el software de playout perfecto para vMix</h1>
 
   <p>
     Hace un tiempo me empezó a molestar una cosa bastante específica de trabajar con vMix.
@@ -44,15 +42,11 @@ tags: [personal]
   </p>
 
   <p>
-    Quería algo más parecido a un sistema de playout. Una biblioteca de contenido donde pudiera encontrar las cosas rápido, ver qué son, preparar algo y dispararlo cuando correspondiera.
+    Quería un híbrido entre un media browser y un sistema de playout. Una biblioteca de contenido donde pudiera encontrar las cosas rápido, ver qué son, preparar algo y dispararlo cuando correspondiera.
   </p>
 
   <p>
-    Pero sin reemplazar vMix.
-  </p>
-
-  <p>
-    Ese era el problema.
+    Pero sin reemplazar vMix. Ese era el problema.
   </p>
 
   <h2>¿Por qué no simplemente usar vMix?</h2>
@@ -62,15 +56,11 @@ tags: [personal]
   </p>
 
   <p>
-    Y sí.
+    Y sí. Durante mucho tiempo lo hice.
   </p>
 
   <p>
-    Durante mucho tiempo lo hice.
-  </p>
-
-  <p>
-    vMix puede reproducir videos, tiene inputs, playlists, triggers, scripting, NDI, etc. Podés hacer bastante sin salir de la aplicación.
+    vMix tiene playlists, triggers, scripting, NDI, etc. Podés hacer bastante sin salir de la aplicación.
   </p>
 
   <p>
@@ -90,57 +80,39 @@ tags: [personal]
   </p>
 
   <p>
-    Quiero poder mirar la interfaz y reconocer visualmente el contenido. Quiero buscarlo. Quiero tener categorías. Quiero saber cuánto dura. Quiero previsualizarlo. Quiero poder preparar el siguiente mientras otra cosa está al aire.
+    Quiero poder mirar la interfaz y reconocer visualmente el contenido. Quiero poder buscarlo (por categorías o tags por ejemplo). Quiero saber cuánto dura, previsualizarlo. Quiero poder poner algo en cue mientras otra cosa está al aire.
   </p>
 
   <p>
-    Y, sobre todo, quiero poder agarrarlo <em>on the fly</em>.
+    Y, sobre todo, quiero poder hacerlo rápido. Porque eso terminó siendo medio que uno de los criterios más importantes de toda esta búsqueda.
   </p>
 
   <p>
-    Porque ese terminó siendo uno de los criterios más importantes de toda esta búsqueda.
-  </p>
-
-  <p>
-    No me sirve demasiado una herramienta técnicamente increíble si para poner un video al aire tengo que hacer siete pasos y acordarme dónde está cada cosa.
+    No me sirve una herramienta técnicamente increíble si para poner un video al aire tengo que hacer siete pasos y acordarme dónde está cada cosa.
   </p>
 
   <h2>Entonces, ¿qué estaba buscando exactamente?</h2>
 
   <p>
-    No estaba buscando otro switcher.
+    No estaba buscando otro main mixer, ni un sistema de automatización de televisión 24/7
   </p>
 
   <p>
-    Tampoco otro OBS.
-  </p>
-
-  <p>
-    Ni un sistema de automatización de televisión 24/7.
-  </p>
-
-  <p>
-    Quería algo bastante más específico.
-  </p>
-
-  <p>
-    Más o menos esto:
+    Quería algo bastante más específico, más o menos esto:
   </p>
 
   <pre><code>MEDIA LIBRARY
       ↓
 MEDIA BROWSER
       ↓
-   PLAYOUT
-      ↓
-      NDI
-      ↓
+   PLAYOUT VTR
+      ↓ndi
      vMix
       ↓
-   PROGRAM</code></pre>
+     LIVE</code></pre>
 
   <p>
-    La idea era separar un poco las responsabilidades.
+    La idea era separar un poco las tareas (pensando en que se puede escalar en el futuro a tenerlo en un puesto indepéndiente).
   </p>
 
   <p>
@@ -148,7 +120,7 @@ MEDIA BROWSER
   </p>
 
   <p>
-    Y cuanto más buscaba, más me daba cuenta de que la parte complicada no era necesariamente el playout.
+    Y cuanto más buscaba, más me daba cuenta de que la parte complicada no era necesariamente el "sistema" de playout.
   </p>
 
   <p>
@@ -162,65 +134,36 @@ MEDIA BROWSER
   </p>
 
   <p>
-    Si estoy sacando un video ahora, quiero poder buscar el siguiente sin tocar lo que está al aire.
+    Si estoy al aire con un video, quiero poder buscar el siguiente sin tocar lo que está live.
   </p>
 
   <p>
     Algo así:
   </p>
 
-  <pre><code>SEARCH
-   ↓
-PREVIEW
-   ↓
-CUE
-   ↓
-TAKE</code></pre>
+  <pre><code>
+  SEARCH → PREVIEW → CUE → TAKE
+</code></pre>
 
   <p>
-    Parece una boludez, pero cambia bastante la experiencia.
+    Parece una boludez, pero cambia bastante la experiencia. Porque ya no estoy pensando "tengo que reproducir este archivo".
+  </p>
+  <p>
+    Estoy pensando: "quiero poner el video del invitado".
   </p>
 
   <p>
-    Porque ya no estoy pensando "tengo que reproducir este archivo".
+    Lo busco. Lo veo. Pongo en cue. Y cuando llega el momento, <strong>Take</strong>.
+  </p>
+
+  <h2>El titán de los titanes.</h2>
+
+  <p>
+    Una de las primeras cosas que encontré cuando me puse a investigar. fue CasparCG.
   </p>
 
   <p>
-    Estoy pensando:
-  </p>
-
-  <blockquote>
-    <p>Quiero poner el video del invitado.</p>
-  </blockquote>
-
-  <p>
-    Lo busco.
-  </p>
-
-  <p>
-    Lo veo.
-  </p>
-
-  <p>
-    Lo dejo preparado.
-  </p>
-
-  <p>
-    Y cuando llega el momento, <strong>Take</strong>.
-  </p>
-
-  <p>
-    Broadcast people know what I'm talking about.
-  </p>
-
-  <h2>CasparCG</h2>
-
-  <p>
-    Una de las primeras cosas que terminé encontrando fue CasparCG.
-  </p>
-
-  <p>
-    Si no lo conocés, básicamente es un playout server open source bastante conocido en el mundo broadcast.
+    Si no lo conocés, básicamente es un <strong>playout server</strong> open source bastante conocido (y robusto) en el mundo broadcast.
   </p>
 
   <p>
@@ -239,11 +182,10 @@ TAKE</code></pre>
     Conceptualmente:
   </p>
 
-  <pre><code>MEDIA
+  <pre><code>
+  MEDIA
   ↓
 CasparCG
-  ↓
-OUTPUT
   ↓
 vMix</code></pre>
 
@@ -260,25 +202,21 @@ vMix</code></pre>
   </blockquote>
 
   <p>
-    Porque una cosa es tener un muy buen motor de playout y otra es tener una interfaz que te permita encontrar y disparar contenido rápido.
+    Porque una cosa es tener un muy buen motor de playout (no olvidemos que Caspar es un server-side) y otra es tener una interfaz que te permita encontrar y disparar contenido rápido.
   </p>
 
   <p>
-    CasparCG me empezó a parecer interesante justamente por eso: me llevó a separar mentalmente el problema entre <strong>backend</strong> y <strong>operator UI</strong>.
+    CasparCG me empezó a parecer interesante justamente por eso: me llevó a separar mentalmente el problema entre <strong>backend</strong> y <strong>UI</strong> (ponele).
   </p>
 
-  <h2>CasparCG Client</h2>
+  <h2>¡Sorpresa! CasparCG tiene una interfaz.</h2>
 
   <p>
-    Después apareció CasparCG Client, que básicamente agrega una interfaz para controlar CasparCG.
-  </p>
-
-  <p>
-    Ya estamos más cerca.
+    Después apareció CasparCG Client, que básicamente agrega una interfaz para controlar CasparCG Server.
   </p>
 
   <p>
-    Ahora no tengo solamente el motor de playout. Tengo una herramienta para manejarlo.
+    Ok. Ahora no tengo solamente el motor de playout. Tengo una herramienta para manejarlo.
   </p>
 
   <p>
@@ -309,10 +247,14 @@ vMix</code></pre>
     <strong>¿qué tan rápido puedo pasar de "necesito este video" a "está saliendo"?</strong>
   </p>
 
-  <h2>SuperConductor</h2>
+   <p>
+    Momento standby para Caspar Client
+  </p>
+
+  <h2>La gracia del open source</h2>
 
   <p>
-    Después llegué a SuperConductor, de SuperFlyTV.
+    Después llegué a SuperConductor, un UI alternativo a CasparCG Client, pero mucho más pulido. 
   </p>
 
   <p>
@@ -320,15 +262,15 @@ vMix</code></pre>
   </p>
 
   <p>
-    Puede trabajar con CasparCG y también integrarse con otros sistemas, entre ellos vMix, ATEM y diferentes dispositivos.
+    Puede trabajar con CasparCG (mejor dicho, está pensado para usar en conjunto a Caspar server)y también integrarse con otros sistemas, entre ellos vMix, ATEM y diferentes dispositivos. Joya.
   </p>
 
   <p>
-    Tiene concepto de rundown, recursos, playout, timeline, etc.
+    Tiene como distintos workspaces de rundown, assets, timeline, etc.
   </p>
 
   <p>
-    O sea, empieza a aparecer esa idea de tener una capa por encima de los distintos sistemas técnicos.
+    O sea, empieza a aparecer esa idea de tener una capa por encima de los distintos sistemas técnicos. ✨ Un control system ✨
   </p>
 
   <p>
@@ -336,7 +278,7 @@ vMix</code></pre>
   </p>
 
   <p>
-    Estaba buscando una especie de <strong>control room para contenidos</strong>.
+    Estaba buscando una especie de <strong>control room para contenidos</strong>. Inventé la pólvora. 
   </p>
 
   <p>
@@ -348,14 +290,10 @@ vMix</code></pre>
   </p>
 
   <p>
-    Necesitaba encontrar un video sin putear.
+    Necesitaba encontrar un video rápido para no llegar tarde al vivo.
   </p>
 
-  <p>
-    Important distinction.
-  </p>
-
-  <h2>Dinesat Visual Radio</h2>
+  <h2>Otros flavors más específicos</h2>
 
   <p>
     Otra solución que apareció fue Dinesat Visual Radio.
@@ -366,23 +304,11 @@ vMix</code></pre>
   </p>
 
   <p>
-    Dinesat tiene una lógica de automatización y gestión de contenido audiovisual pensada para radio y visual radio, y además existe una integración directa con vMix.
+    Dinesat tiene una lógica de automatización y gestión de contenido audiovisual pensada para radio y visual radio, y además existe una integración directa con vMix. Ta, listo.
   </p>
 
   <p>
-    La arquitectura tiene bastante sentido:
-  </p>
-
-  <pre><code>CONTENIDO
-   ↓
-DINESAT
-   ↓
- vMix
-   ↓
-STREAM</code></pre>
-
-  <p>
-    Y acá encontré algo importante: la idea que estaba buscando no era para nada rara.
+    La idea que estaba buscando no era para nada rara. Y... no.
   </p>
 
   <p>
@@ -394,21 +320,17 @@ STREAM</code></pre>
   </p>
 
   <p>
-    Yo no estaba buscando automatizar una radio entera.
+    Yo no estaba buscando automatizar una radio entera. O si...? No, por ahora no.
   </p>
 
   <p>
     Estaba buscando una herramienta para <strong>operar una biblioteca audiovisual durante una producción</strong>.
   </p>
 
-  <h2>Sofie Automation</h2>
+  <h2>Las grandes ligas</h2>
 
   <p>
-    También terminé cayendo en Sofie Automation.
-  </p>
-
-  <p>
-    Y acá ya estamos jugando en otra liga.
+    También terminé cayendo en Sofie Automation, aka el software que usa la BBC para salir en vivo. Tuki.
   </p>
 
   <p>
@@ -416,24 +338,17 @@ STREAM</code></pre>
   </p>
 
   <p>
-    Me sirve mucho como referencia porque muestra hasta dónde puede llegar este concepto.
+    Me sirve mucho como referencia para seguir nerdeando.
   </p>
 
   <p>
-    Pero también me hizo pensar:
-  </p>
-
-  <blockquote>
-    <p>Che, capaz estoy overengineering this shit.</p>
-  </blockquote>
-
-  <p>
-    Porque mi problema no era construir una cadena de televisión.
+    Pero también me hizo pensar: capaz me fui al carajo pensando en la sobre ingeniería de todo esto.
   </p>
 
   <p>
-    Era encontrar rápido un video.
+    Porque mi problema no era construir una cadena de televisión. Era encontrar rápido un video. Humildemente.
   </p>
+
 
   <h2>SPX, H2R y la importancia de la interfaz</h2>
 
@@ -446,17 +361,12 @@ STREAM</code></pre>
   </p>
 
   <p>
-    Y esto parece bastante obvio, pero creo que es fácil perderlo cuando uno empieza a mirar herramientas por sus features.
+    Y esto parece bastante obvio, pero es fácil perderse cuando uno empieza a mirar herramientas por sus features.
   </p>
 
   <p>
-    Podés tener un backend espectacular.
+    Podés tener un backend espectacular, APIs, OSC, NDI, CasparCG, scripting, automatización, integración con media servers y todas las buzzwords que quieras.
   </p>
-
-  <p>
-    Podés tener API, OSC, NDI, CasparCG, scripting, automatización, integración con media servers y todas las buzzwords que quieras.
-  </p>
-
   <p>
     Pero si en vivo necesitás hacer una búsqueda de 30 segundos para encontrar un contenido, medio que no importa.
   </p>
@@ -465,39 +375,6 @@ STREAM</code></pre>
     La interfaz debería hacer que el operador piense en <strong>qué quiere hacer</strong>, no en cómo está implementado.
   </p>
 
-  <p>
-    Por ejemplo:
-  </p>
-
-  <pre><code>┌───────────────┐
-│    APERTURA   │
-├───────────────┤
-│   SEPARADOR   │
-├───────────────┤
-│ VIDEO INVITADO│
-├───────────────┤
-│   PUBLICIDAD  │
-├───────────────┤
-│     CIERRE    │
-└───────────────┘</code></pre>
-
-  <p>
-    Eso me resulta mucho más interesante que:
-  </p>
-
-  <pre><code>D:\Produccion\2026\Programa\Videos\
-final\
-final2\
-ahora_si\
-apertura_FINAL_v8.mp4</code></pre>
-
-  <p>
-    Y sí, probablemente hay un sistema de naming que podría solucionar parte de esto.
-  </p>
-
-  <p>
-    Pero that's not the point.
-  </p>
 
   <h2>Entonces, ¿qué aprendí de toda esta búsqueda?</h2>
 
@@ -533,7 +410,7 @@ apertura_FINAL_v8.mp4</code></pre>
     Ahí aparecen soluciones como Dinesat o Sofie.
   </p>
 
-  <h3>Production</h3>
+  <h3>Producción</h3>
 
   <p>
     vMix.
@@ -543,7 +420,7 @@ apertura_FINAL_v8.mp4</code></pre>
     Cámaras, switching, gráficos, NDI, streaming, grabación, etc.
   </p>
 
-  <h3>Operation</h3>
+  <h3>Operación</h3>
 
   <p>
     Y acá está lo que más me importa.
@@ -596,13 +473,11 @@ apertura_FINAL_v8.mp4</code></pre>
                         ▼
                       PLAYOUT
                         │
-                       NDI
-                        │
                         ▼
                        vMix
                         │
                         ▼
-                     PROGRAM</code></pre>
+                     LIVE</code></pre>
 
   <p>
     Y probablemente tendría alguna integración con Stream Deck para determinadas cosas.
@@ -626,11 +501,7 @@ apertura_FINAL_v8.mp4</code></pre>
     </p>
   </blockquote>
 
-  <p>
-    That's it.
-  </p>
-
-  <h2>¿Y si lo hago?</h2>
+  <h2>What if...?</h2>
 
   <p>
     Obviamente, después de investigar durante horas sobre software existente, apareció la pregunta inevitable:
@@ -641,7 +512,7 @@ apertura_FINAL_v8.mp4</code></pre>
   </blockquote>
 
   <p>
-    Porque técnicamente no parece una locura.
+    Porque técnicamente no parece una locura. Y además existe Claude.
   </p>
 
   <p>
@@ -654,10 +525,6 @@ apertura_FINAL_v8.mp4</code></pre>
 
   <p>
     CasparCG podría encargarse del playout.
-  </p>
-
-  <p>
-    NDI podría llevar la señal hasta vMix.
   </p>
 
   <p>
@@ -683,43 +550,11 @@ apertura_FINAL_v8.mp4</code></pre>
   </p>
 
   <p>
-    Encontré muchas piezas.
+    Capaz el software que estoy buscando existe y simplemente todavía no lo encontré.
   </p>
 
   <p>
-    vMix resuelve producción.
-  </p>
-
-  <p>
-    CasparCG resuelve playout.
-  </p>
-
-  <p>
-    SuperConductor agrega una capa de control bastante interesante.
-  </p>
-
-  <p>
-    Dinesat resuelve un ecosistema mucho más grande de automatización y visual radio.
-  </p>
-
-  <p>
-    Sofie muestra cómo escalar esto muchísimo más.
-  </p>
-
-  <p>
-    Y las herramientas de gráficos me terminaron recordando algo bastante básico:
-  </p>
-
-  <p>
-    <strong>la herramienta que usa el operador también es parte del sistema.</strong>
-  </p>
-
-  <p>
-    Capaz el software que estaba buscando existe y simplemente todavía no lo encontré.
-  </p>
-
-  <p>
-    Capaz estoy intentando resolver un problema que ya está resuelto de alguna forma que todavía no conozco.
+    Capaz estoy intentando resolver un problema que ya está resuelto de alguna forma que todavía no conozco. Probablemente.
   </p>
 
   <p>
@@ -732,10 +567,6 @@ apertura_FINAL_v8.mp4</code></pre>
 
   <p>
     Y ahí ya tenemos otro rabbit hole.
-  </p>
-
-  <p>
-    <strong>To be continued.</strong>
   </p>
 
 </article>
